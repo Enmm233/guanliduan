@@ -1,0 +1,3563 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+form {
+  display: inline;
+}
+
+input {
+  border: none;
+  -webkit-appearance: none;
+  position: relative;
+  z-index: 9;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  box-shadow: 0 0 0 60px #fff inset;
+  -webkit-text-fill-color: #999;
+}
+
+a {
+  text-decoration: none;
+}
+
+i,
+em,
+cite,
+address,
+dfn,
+address {
+  font-style: normal;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li {
+  list-style: none;
+}
+
+td,
+th,
+div {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+}
+
+body {
+  background: #fff;
+  font-family: Microsoft YaHei, Helvetica, Tahoma, Arial, STXihei, sans-serif;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+textarea {
+  resize: none;
+  border: 0;
+  resize: none;
+  outline: 0;
+  border-radius: 0;
+  overflow: auto;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+}
+
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+input[type="text"],
+input[type="password"] {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+}
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+/* 1 */
+figcaption,
+figure,
+footer,
+header,
+main,
+/* 2 */
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+template,
+/* 1 */
+[hidden] {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+/* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0);
+}
+
+/*placeholder颜色样式*/
+*::-webkit-input-placeholder {
+  color: #a3a3a3;
+  font-size: 0.24rem;
+}
+
+*:-moz-placeholder {
+  color: #a3a3a3;
+  font-size: 0.24rem;
+}
+
+*:-ms-input-placeholder {
+  color: #a3a3a3;
+  font-size: 0.24rem;
+}
+
+*::-webkit-textarea-placeholder {
+  color: #a3a3a3;
+  font-size: 0.24rem;
+}
+
+*:-moz-placeholder {
+  color: #a3a3a3;
+  font-size: 0.24rem;
+}
+
+*:-ms-textarea-placeholder {
+  color: #a3a3a3;
+  font-size: 0.24rem;
+}
+
+
+/*通用样式*/
+body.active {
+  background: #fff;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.main {
+  max-width: 8.5rem;
+  min-width: 3.2rem;
+  margin: 0 auto;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.adminis_zo {
+  position: fixed;
+  z-index: 991;
+  max-width: 8.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.adminis_gd {
+  height: 0.2rem;
+  background: #f0f0f0;
+}
+
+.adminis_gd1 {
+  height: 0.1rem;
+  background: #f0f0f0;
+}
+
+/* 通用标题 */
+.adminis_ti {
+  position: fixed;
+  z-index: 99;
+  border-bottom: 1px solid #f0f0f0;
+  max-width: 8.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  background: #fff;
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+}
+
+.adminis_ti .adminis_til {
+  line-height: 1rem;
+  float: left;
+}
+
+.adminis_ti .adminis_til a i {
+  font-size: 0.5rem;
+  color: #666;
+}
+
+.adminis_ti .adminis_tio {
+  position: absolute;
+  top: 0;
+  width: 70%;
+  left: 15%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.36rem;
+  color: #333;
+  height: 0.88rem;
+}
+
+.adminis_ti .adminis_tir {
+  float: right;
+  line-height: 0.88rem;
+}
+
+.adminis_ti .adminis_tir a {
+  font-size: 0.26rem;
+  color: #808080;
+}
+
+.adminis_ti1 {
+  border-bottom: 0;
+}
+
+.adminis_tih {
+  height: 0.88rem;
+  background: #fff;
+}
+
+/* 通用按钮 */
+.adminis_button_m {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.adminis_button {
+  display: inline-block;
+  width: 100%;
+  height: 0.72rem;
+  line-height: 0.72rem;
+  margin: auto;
+  text-align: center;
+  background: #6cca28;
+  color: #fff;
+  font-size: 0.34rem;
+  border-radius: 0.1rem;
+  -moz-box-shadow: 0px -2px 0px #57af51 inset;
+  /* For Firefox3.6+ */
+  -webkit-box-shadow: 0px -2px 0px #57af51 inset;
+  /* For Chrome5+, Safari5+ */
+  box-shadow: 0px -2px 0px #57af51 inset;
+  /* For Latest Opera */
+}
+
+/* 通用底部 */
+.adminis_footer_h {
+  height: 1rem;
+}
+
+.adminis_footer {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 0.98rem;
+  display: block;
+  max-width: 8.5rem;
+  background: #fff;
+  border-top: 1px solid #f5f0f0;
+}
+
+.adminis_footer a {
+  display: block;
+  text-align: center;
+  width: 20%;
+  float: left;
+  padding-top: 0.12rem;
+}
+
+.adminis_footer a i {
+  font-size: 0.4rem;
+  color: #ccc;
+  display: block;
+  height: 0.4rem;
+}
+
+.adminis_footer a cite {
+  font-size: 0.22rem;
+  color: #ccc;
+  display: block;
+  margin-top: 0.08rem;
+}
+
+.adminis_footer a:nth-child(2) i {
+  font-size: 0.48rem;
+}
+
+.adminis_footer a:nth-child(5) i {
+  font-size: 0.48rem;
+}
+
+.adminis_footer a.on i {
+  color: #16cf2e;
+  font-weight: 600;
+}
+
+.adminis_footer a.on cite {
+  color: #16cf2e;
+}
+
+/* 通用勾选 */
+.mint-cell {
+  min-height: 0.55rem;
+  margin-top: 0.1rem;
+}
+
+.mint-checkbox {
+  position: relative;
+  top: 0.01rem;
+}
+
+.mint-checkbox-core {
+  width: 0.35rem;
+  height: 0.35rem;
+}
+
+.mint-checkbox-label {
+  font-size: 0.26rem;
+  color: #ccc;
+}
+
+.mint-checkbox-core::after {
+  width: 0.08rem;
+  height: 0.15rem;
+  top: 0.04rem;
+  left: 0.1rem;
+}
+
+.mint-checkbox-input:checked+.mint-checkbox-core {
+  background: #17c749;
+  border-color: #17c749;
+}
+
+.mint-checkbox-label.on {
+  color: #333;
+}
+
+/* 通用 */
+.mint-switch .mint-switch-core {
+  height: 0.5rem;
+  width: 1rem;
+  border-radius: 1000px;
+}
+
+.mint-switch .mint-switch-core::before {
+  height: 0.47rem;
+  width: 0.97rem;
+  border-radius: 1000px;
+}
+
+.mint-switch-core::after {
+  height: 0.45rem;
+  width: 0.5rem;
+  border-radius: 1000rem;
+  background: #fff;
+}
+
+.mint-switch-core::before {
+  background: #fafafa;
+}
+
+.mint-switch-input:checked+.mint-switch-core {
+  background: #6cca28;
+  border-color: #6cca28;
+}
+
+.mint-switch-input:checked+.mint-switch-core::after {
+  -webkit-transform: translateX(0.44rem);
+  transform: translateX(0.44rem);
+}
+
+
+/* 通用加载 */
+.vueappsy_mode {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+}
+
+.vueappsy_mode .mint-spinner-fading-circle {
+  display: inline-block;
+  position: relative;
+  top: 0.08rem;
+  display: none;
+}
+
+.vueappsy_mode cite {
+  display: inline-block;
+  font-size: 0.3rem;
+  margin-left: 0.15rem;
+  color: #333;
+}
+
+/* 通用暂无数据 */
+.placewr_ws {
+  text-align: center;
+  font-size: 0.3rem;
+  width: 100%;
+  color: #999;
+  display: none;
+  padding-top: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.placewr_ws img {
+  display: block;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: auto;
+}
+
+.placewr_ws cite {
+  display: block;
+  margin-top: 0.4rem;
+}
+
+/* 重置mint UI的样式*/
+.mint-indicator {
+  position: fixed;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  max-width: 8.5rem;
+  margin: auto;
+}
+
+.mint-indicator-wrapper {
+  z-index: 99999;
+}
+
+.mint-toast {
+  width: 100%;
+  height: 100%;
+  background: none;
+  max-width: none;
+  z-index: 99999999999;
+}
+
+.mint-toast-text {
+  font-size: 0.28rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.1rem;
+  -webkit-transition: opacity .3s linear;
+  transition: opacity .3s linear;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  margin-top: 70%;
+  display: inline-block;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  min-height: 0.5rem;
+  line-height: 0.55rem;
+}
+
+.mint-toast.is-placemiddle {
+  -webkit-transform: none;
+  transform: none;
+  top: 0;
+  left: 0;
+}
+
+/* 通用弹框 */
+.v-modalw {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #000;
+  z-index: 99999;
+}
+
+.mint-msgboxw {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  background-color: #fff;
+  width: 85%;
+  border-radius: 0.04rem;
+  font-size: 0.213333rem;
+  -webkit-user-select: none;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: 999999;
+}
+
+.mint-msgbox-headerw {
+  padding: 0.2rem 0 0;
+}
+
+.mint-msgbox-titlew {
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+  font-size: 0.28rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.mint-msgbox-contentw {
+  padding: 0.133333rem 0.266667rem 0.2rem;
+  border-bottom: 0.013333rem solid #ddd;
+  min-height: 0.48rem;
+  position: relative;
+}
+
+.mint-msgbox-messagew {
+  color: #999;
+  margin: 0;
+  text-align: center;
+  min-height: 1rem;
+  padding-top: 0.2rem;
+}
+
+.mint-msgbox-btnsw {
+  display: flex;
+  height: 0.533333rem;
+  line-height: 0.533333rem;
+}
+
+.mint-msgbox-btnw {
+  line-height: 0.466667rem;
+  display: block;
+  background-color: #fff;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0;
+  border: 0;
+  font-size: 0.28rem;
+}
+
+.mint-msgbox-cancelw {
+  width: 50%;
+  border-right: 0.013333rem solid #ddd;
+}
+
+.mint-msgbox-confirmw {
+  color: #26a2ff;
+  width: 50%;
+}
+
+/* 通用勾选按钮 */
+.placean .placean_se {
+  float: left;
+}
+
+.placean .placean_se:first-child {
+  margin-left: 0.4rem;
+  margin-right: 18%;
+}
+
+.placean .placean_se i {
+  font-size: 0.4rem;
+  color: #666;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.08rem;
+}
+
+.placean .placean_se ruby {
+  font-size: 0.28rem;
+  color: #333;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.placean .placean_se.on i {
+  color: #14B116;
+}
+
+.placean .placean_se.on ruby {
+  color: #14B116;
+}
+
+.placean .placean_se:last-child {
+  margin-right: 0;
+}
+
+/* 提示 */
+.container {
+  text-align: center;
+  height: 100%;
+  background: url('../img/bg.jpg') #a1d5d3 no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+}
+
+.container img {
+  display: block;
+  margin: auto;
+  margin-top: 140px;
+}
+
+.container span {
+  color: #6bbaa3;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  margin: auto;
+}
+
+/* 全局登录 */
+.adminislo {
+  padding-top: 0.4rem;
+  padding-bottom: 0.2rem;
+  background: #fff;
+}
+
+.adminislo .adminislo_i {
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  top: 0;
+  margin-right: 0.2rem;
+  margin-top: 0.3rem;
+}
+
+.adminislo .adminislo_i i {
+  font-size: 0.5rem;
+  color: #b3b3b3;
+}
+
+.adminislo .adminis_button_m {
+  margin-top: 0.95rem;
+}
+
+.adminislo ol li {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  height: 0.98rem;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+}
+
+.adminislo ol li cite {
+  display: inline-block;
+  font-size: 0.3rem;
+  color: #666;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  vertical-align: top;
+  margin-top: 0.04rem;
+}
+
+.adminislo ol li input {
+  display: inline-block;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  width: 75%;
+  vertical-align: top;
+  margin-top: 0.06rem;
+  font-size: 0.3rem;
+  color: #333;
+}
+
+.adminislo ol li input#trigger1 {
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  background: none;
+  width: 82%;
+}
+
+/*placeholder颜色样式*/
+.adminislo ol li *::-webkit-input-placeholder {
+  font-size: 0.3rem;
+}
+
+.adminislo ol li *:-moz-placeholder {
+  font-size: 0.3rem;
+}
+
+.adminislo ol li *:-ms-input-placeholder {
+  font-size: 0.3rem;
+}
+
+.adminislo ol li *::-webkit-textarea-placeholder {
+  font-size: 0.3rem;
+}
+
+.adminislo ol li *:-moz-placeholder {
+  font-size: 0.3rem;
+}
+
+.adminislo ol li *:-ms-textarea-placeholder {
+  font-size: 0.3rem;
+}
+
+/* 采购端 */
+/* 采购修改密码 */
+.adminiswj {
+  height: 0.2rem;
+  background: #f0f0f0;
+}
+
+.adminiswj_li {
+  padding-top: 0.4rem;
+}
+
+.adminiswj_li ol li cite {
+  width: 28%;
+  text-align: right;
+}
+
+.adminiswj_li ol li input {
+  width: 69%;
+}
+
+/* 采购首页 */
+.adminisin_bj {
+  background: url('../img/admin_pic.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 5.33rem;
+  position: relative;
+}
+
+.adminisin_bj #incomplete {
+  display: block;
+  margin: auto;
+}
+
+.adminisin_bj .adminisin_bjx {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  margin: auto;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 1000rem;
+  border: 1px dashed #fff;
+}
+
+.adminisin_bj .adminisin_bjs {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  margin: auto;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 1000rem;
+  border: 1px solid #fff;
+}
+
+.adminisin_bj .adminisin_bjw {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  text-align: center;
+  color: #fff;
+}
+
+.adminisin_bj .adminisin_bjw cite {
+  font-size: 0.8rem;
+  margin-top: 0.6rem;
+  display: block;
+}
+
+.adminisin_bj .adminisin_bjw .adminisin_bjw_l {
+  margin-top: 0.5rem;
+}
+
+.adminisin_bj .adminisin_bjw .adminisin_bjw_l address {
+  display: inline-block;
+}
+
+.adminisin_bj .adminisin_bjw .adminisin_bjw_l address:first-child {
+  margin-right: 0.15rem;
+}
+
+.adminisin_bj .adminisin_bjw .adminisin_bjw_l address:last-child {
+  margin-left: 0.15rem;
+}
+
+.adminisin_bj .adminisin_bjw .adminisin_bjw_l address aside {
+  font-size: 0.24rem;
+}
+
+.adminisin_bj .adminisin_bjw .adminisin_bjw_l address dfn {
+  font-size: 0.36rem;
+  margin-top: 0.05rem;
+  display: block;
+}
+
+.adminisin_list ol li {
+  height: 1.1rem;
+  background: #fff;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminisin_list ol li i {
+  font-size: 0.62rem;
+  line-height: 1.1rem;
+  color: #3bca28;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 0.05rem;
+}
+
+.adminisin_list ol li .adminisin_list_o {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+
+.adminisin_list ol li .adminisin_list_o cite {
+  font-size: 0.26rem;
+  color: #333;
+  display: block;
+  margin-top: 0.05rem;
+  margin-bottom: 0.05rem;
+}
+
+.adminisin_list ol li .adminisin_list_o address {
+  font-size: 0.22rem;
+  color: #999;
+}
+
+.adminisin_list ol li aside {
+  display: block;
+  float: right;
+  font-size: 0.6rem;
+  color: #4c4c4c;
+  line-height: 1.1rem;
+  margin-right: 0.1rem;
+}
+
+/* 采购 */
+.adminispu_se {
+  height: 1rem;
+  background: #fff;
+  padding-top: 0.1rem;
+  position: fixed;
+  z-index: 99;
+  max-width: 8.5rem;
+  top: 0.88rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.adminispu_se .adminispu_seb {
+  height: 0.64rem;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.1rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.adminispu_se input {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  width: 80%;
+  display: block;
+  float: left;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  font-size: 0.3rem;
+  color: #333;
+}
+
+.adminispu_se cite {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  width: 20%;
+  display: block;
+  float: right;
+  text-align: center;
+}
+
+.adminispu_se cite dfn {
+  display: block;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-left: 1px solid #f0f0f0;
+  margin-top: 0.1rem;
+  font-size: 0.3rem;
+  color: #666;
+}
+
+.adminispu_seh {
+  height: 1.88rem;
+}
+
+.adminispu_gy {
+  position: fixed;
+  z-index: 991;
+  max-width: 8.5rem;
+  top: 0;
+  right: 0;
+  background: #fff;
+  width: 45%;
+  border-radius: 0.1rem 0 0 0.1rem;
+  padding-bottom: 0.2rem;
+  display: none;
+}
+
+.adminispu_gy cite {
+  text-align: center;
+  font-size: 0.3rem;
+  color: #333;
+  display: block;
+  height: 0.65rem;
+  line-height: 0.65rem;
+  border-bottom: 1px solid #f0f0f0;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.adminispu_gy .mint-checkbox-label {
+  margin-left: 0.3rem;
+  width: 60%;
+  display: inline-block;
+  line-height: 0.3rem;
+}
+
+.adminispu_gy .mint-checklist {
+  height: 3rem;
+  overflow-y: auto;
+  margin-top: 0.2rem
+}
+
+.adminispu_list {
+  margin-bottom: 0.2rem;
+}
+
+.adminispu_list ol li .adminispu_list_ba {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.adminispu_list ol li:last-child .adminis_gd1 {
+  display: none;
+}
+
+.adminispu_list ol li .adminispu_list_ti {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.adminispu_list ol li .adminispu_list_ti dfn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.08rem;
+  height: 0.3rem;
+  background: #5ed336;
+}
+
+.adminispu_list ol li .adminispu_list_ti cite {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.2rem;
+  font-size: 0.3rem;
+  color: #4c4c4c;
+  overflow: hidden;
+  height: 0.8rem;
+  width: 50%;
+}
+
+.adminispu_list ol li .adminispu_list_ti em {
+  display: block;
+  float: right;
+  font-size: 0.26rem;
+  color: #666;
+  width: 40%;
+  text-align: right;
+  overflow: hidden;
+  height: 0.8rem;
+}
+
+.adminispu_list ol li .adminispu_list_ad {
+  margin-top: 0.2rem;
+}
+
+.adminispu_list ol li .adminispu_list_ad address {
+  margin-top: 0.1rem;
+  font-size: 0.26rem;
+}
+
+.adminispu_list ol li .adminispu_list_ad address aside {
+  color: #666;
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.adminispu_list ol li .adminispu_list_ad address dfn {
+  color: #999;
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+}
+
+.adminispu_list ol li .adminispu_list_in {
+  margin-top: 0.2rem;
+}
+
+.adminispu_list ol li .adminispu_list_in input {
+  width: 21.5%;
+  height: 0.54rem;
+  line-height: 0.54rem;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.1rem;
+  font-size: 0.24rem;
+  color: #333;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  margin-left: 0.2rem;
+}
+
+.adminispu_list ol li .adminispu_list_in input:first-child {
+  margin-left: 0;
+}
+
+.adminispu_list ol li .adminispu_list_in button {
+  width: 1.2rem;
+  height: 0.54rem;
+  line-height: 0.54rem;
+  display: block;
+  float: right;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.26rem;
+  color: #fff;
+  border-radius: 0.1rem;
+  background: #6cca28;
+}
+
+/* 采购单 */
+.adminispo_sel {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminispo_sel input {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.3rem;
+  color: #333;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.1rem 0 0 0.1rem;
+  width: 80%;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  float: left;
+}
+
+.adminispo_sel button {
+  width: 20%;
+  float: left;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  border: 1px solid #6cca28;
+  background: #6cca28;
+  text-align: center;
+  border-radius: 0 0.1rem 0.1rem 0;
+}
+
+.adminispo_sel button i {
+  font-size: 0.6rem;
+  color: #fff;
+}
+
+.adminispo_list {
+  margin-bottom: 0.2rem;
+}
+
+.adminispo_list ol li .adminispo_list_ba {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminispo_list ol li:last-child .adminis_gd1 {
+  display: none;
+}
+
+.adminispo_list ol li a {
+  display: block;
+}
+
+.adminispo_list ol li .adminispo_list_d {
+  height: 0.97rem;
+  line-height: 0.97rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.adminispo_list ol li .adminispo_list_d cite {
+  font-size: 0.3rem;
+  color: #4c4c4c;
+}
+
+.adminispo_list ol li .adminispo_list_d dfn {
+  font-size: 0.22rem;
+  display: block;
+  float: right;
+  text-align: center;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin-top: 0.3rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-radius: 1000rem;
+}
+
+.adminispo_list ol li .adminispo_list_d dfn.adminispo_list_ds1 {
+  background: #d9f6da;
+  color: #75cb37;
+}
+
+.adminispo_list ol li .adminispo_list_d dfn.adminispo_list_ds2 {
+  background: #fee2e7;
+  color: #e8748b;
+}
+
+.adminispo_list ol li .adminispo_list_d dfn.adminispo_list_ds3 {
+  background: #d7fff6;
+  color: #2bcca9;
+}
+
+.adminispo_list ol li .adminispo_list_d dfn.adminispo_list_ds4 {
+  background: #d4f4ff;
+  color: #02b1e4;
+}
+
+.adminispo_list ol li .adminispo_list_d dfn.adminispo_list_ds5 {
+  background: #ffe3d6;
+  color: #df5d21;
+}
+
+.adminispo_list ol li .adminispo_list_s {
+  height: 0.84rem;
+  line-height: 0.84rem;
+}
+
+.adminispo_list ol li .adminispo_list_s aside {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.26rem;
+  color: #666;
+  margin-left: 0.35rem;
+}
+
+.adminispo_list ol li .adminispo_list_s aside:first-child {
+  margin-left: 0;
+}
+
+/* 采购单详情 */
+.adminisde_dh {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  background: #fff;
+}
+
+.adminisde_dh h3 {
+  height: 0.97rem;
+  line-height: 0.97rem;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.3rem;
+  color: #4c4c4c;
+}
+
+.adminisde_dh .adminisde_dhg {
+  margin-top: 0.2rem;
+}
+
+.adminisde_dh .adminisde_dhg address {
+  margin-top: 0.05rem;
+}
+
+.adminisde_dh .adminisde_dhg address aside {
+  margin-left: 15%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.adminisde_dh .adminisde_dhg address aside:first-child {
+  margin-left: 0;
+}
+
+.adminisde_dh .adminisde_dhg address aside ruby {
+  font-size: 0.26rem;
+  color: #666;
+  text-align: justify;
+  text-align-last: justify;
+  width: 1.4rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.adminisde_dh .adminisde_dhg address aside ruby.adminisde_dhg_w {
+  width: auto;
+}
+
+.adminisde_dh .adminisde_dhg address aside dfn {
+  font-size: 0.26rem;
+  color: #999;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.adminisde_dh .adminisde_dhg address aside dfn.on {
+  color: #f55637;
+  font-weight: 600;
+}
+
+.adminisde_dh .adminisde_dhz {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  margin-top: 0.1rem;
+}
+
+.adminisde_dh .adminisde_dhz aside {
+  font-size: 0.24rem;
+  color: #808080;
+  display: block;
+  float: left;
+}
+
+.adminisde_dh .adminisde_dhz aside dfn {
+  color: #f55637;
+  font-weight: 600;
+}
+
+.adminisde_dh .adminisde_dhz aside:last-child {
+  float: right;
+}
+
+.adminisde_list {
+  margin-bottom: 0.2rem;
+}
+
+.adminisde_list ol li .adminisde_list_ba {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.adminisde_list ol li .adminisde_list_ti {
+  height: 0.88rem;
+  line-height: 0.88rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.adminisde_list ol li .adminisde_list_ti dfn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.08rem;
+  height: 0.3rem;
+  background: #5ed336;
+}
+
+.adminisde_list ol li .adminisde_list_ti cite {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.2rem;
+  font-size: 0.3rem;
+  color: #4c4c4c;
+}
+
+.adminisde_list ol li .adminisde_list_ti aside {
+  font-size: 0.22rem;
+  display: block;
+  float: right;
+  text-align: center;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin-top: 0.3rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-radius: 1000rem;
+}
+
+.adminisde_list ol li .adminisde_list_ti aside.adminisde_list_tis1 {
+  background: #d9f6da;
+  color: #75cb37;
+}
+
+.adminisde_list ol li .adminisde_list_ti aside.adminisde_list_tis2 {
+  background: #fee2e7;
+  color: #e8748b;
+}
+
+.adminisde_list ol li .adminisde_list_ti aside.adminisde_list_tis3 {
+  background: #d7fff6;
+  color: #2bcca9;
+}
+
+.adminisde_list ol li .adminisde_list_ti aside.adminisde_list_tis4 {
+  background: #d4f4ff;
+  color: #02b1e4;
+}
+
+.adminisde_list ol li .adminisde_list_ti aside.adminisde_list_tis5 {
+  background: #ffe3d6;
+  color: #df5d21;
+}
+
+.adminisde_list ol li .adminisde_list_ad {
+  margin-top: 0.2rem;
+}
+
+.adminisde_list ol li .adminisde_list_ad address {
+  margin-top: 0.1rem;
+  font-size: 0.26rem;
+}
+
+.adminisde_list ol li .adminisde_list_ad address aside {
+  color: #666;
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.adminisde_list ol li .adminisde_list_ad address dfn {
+  color: #999;
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+}
+
+.adminisde_list ol li .adminisde_list_cl {
+  text-align: center;
+  height: 0.75rem;
+  line-height: 0.75rem;
+}
+
+.adminisde_list ol li .adminisde_list_cl aside {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  height: 0.53rem;
+  line-height: 0.52rem;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.1rem;
+  font-size: 0.24rem;
+  color: #ccc;
+  margin-top: 0.2rem;
+}
+
+.adminisde_list ol li .adminisde_list_cl aside dfn {
+  color: #666;
+}
+
+.adminisde_list ol li .adminisde_list_cl aside:first-child {
+  display: block;
+  float: left;
+}
+
+.adminisde_list ol li .adminisde_list_cl aside:last-child {
+  display: block;
+  float: right;
+}
+
+/* 询价 */
+.adminisiq_gew {
+  height: 1.8rem;
+}
+
+.adminisiq_se {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminisiq_se input {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.26rem;
+  color: #333;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.1rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  width: 100%;
+}
+
+.adminisiq_ge {
+  position: relative;
+  margin-top: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminisiq_ge cite {
+  display: block;
+  float: left;
+  font-size: 0.3rem;
+  color: #333;
+}
+
+.adminisiq_ge input {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.26rem;
+  color: #333;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.1rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  width: 79.5%;
+  background: none;
+}
+
+.adminisiq_ge .adminisiq_i {
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  top: 0;
+  margin-right: 0.4rem;
+  margin-top: 0.05rem;
+}
+
+.adminisiq_ge .adminisiq_i i {
+  font-size: 0.5rem;
+  color: #b3b3b3;
+}
+
+.adminisiq_geh {
+  height: 2.68rem;
+}
+
+.adminisiq_list {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminisiq_list h3 {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.adminisiq_list h3 dfn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.08rem;
+  height: 0.3rem;
+  background: #5ed336;
+}
+
+.adminisiq_list h3 cite {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.2rem;
+  font-size: 0.3rem;
+  color: #4c4c4c;
+}
+
+.adminisiq_list .adminisiq_list_sj {
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.adminisiq_list .adminisiq_list_sj address {
+  height: 0.5rem;
+  line-height: 0.5rem;
+}
+
+.adminisiq_list .adminisiq_list_sj address aside {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.26rem;
+  color: #666;
+}
+
+.adminisiq_list .adminisiq_list_sj address dfn {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.26rem;
+  color: #f55637;
+  margin-left: 6%;
+}
+
+.adminisiq_list .adminisiq_list_sj address ruby {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.26rem;
+  color: #f55637;
+  transform: scale(0.7, 0.7);
+  position: relative;
+  top: 0.02rem;
+}
+
+.adminisiq_zo {
+  position: fixed;
+  z-index: 991;
+  max-width: 8.5rem;
+  top: 1.6rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  background: #fff;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.adminisiq_zob {
+  height: 100%;
+  overflow-y: auto;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+.adminisiq_zo {
+  display: none;
+}
+
+.adminisiq_zo a {
+  display: block;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.3rem;
+  color: #333;
+  overflow: hidden;
+}
+
+.adminisiq_zo a:last-child {
+  border-bottom: 0;
+}
+
+/* 我的 */
+.adminisus_list .adminisus_list_m {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-bottom: 1px solid #f0f0f0;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.adminisus_list .adminisus_list_m address {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.3rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.adminisus_list ol li {
+  height: 1.05rem;
+  line-height: 1.05rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminisus_list ol li a {
+  display: block;
+}
+
+.adminisus_list ol li img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.4rem;
+  height: 0.38rem;
+  position: relative;
+  top: 0.02rem;
+}
+
+.adminisus_list ol li cite {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.3rem;
+  font-size: 0.3rem;
+  color: #4c4c4c;
+  position: relative;
+  top: 0.02rem;
+}
+
+.adminisus_list ol li i {
+  display: block;
+  float: right;
+  font-size: 0.4rem;
+  color: #b3b3b3;
+  margin-top: 0.35rem;
+}
+
+/* 常见问题 */
+.adminispr_list ol li h3 {
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+  font-size: 0.28rem;
+  color: #4c4c4c;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 0.3rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminispr_list ol li cite {
+  display: block;
+  float: left;
+  font-size: 0.26rem;
+  color: #4c4c4c;
+  width: 10%;
+  padding-left: 0.2rem;
+}
+
+.adminispr_list ol li address {
+  display: block;
+  float: left;
+  text-align: justify;
+  line-height: 0.35rem;
+  font-size: 0.26rem;
+  color: #999;
+  width: 90%;
+  padding-right: 0.2rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.1rem;
+}
+
+.adminispr_list ol li:last-child .adminis_gd1 {
+  display: none;
+}
+
+.adminispr_list ol li:last-child {
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 0.3rem;
+}
+
+/* 月账单 */
+.adminismo_list .adminismo_list_z {
+  height: 0.97rem;
+  line-height: 0.97rem;
+  font-size: 0.3rem;
+  color: #4c4c4c;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.adminismo_list .adminismo_list_z dfn {
+  color: #f55637;
+}
+
+.adminismo_list ol li .adminismo_list_ba {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.adminismo_list ol li:last-child .adminis_gd1 {
+  display: none;
+}
+
+.adminismo_list ol li .adminismo_list_l {
+  float: left;
+  font-size: 0.26rem;
+  color: #666;
+}
+
+.adminismo_list ol li .adminismo_list_r {
+  float: right;
+}
+
+.adminismo_list ol li .adminismo_list_r a {
+  display: block;
+}
+
+.adminismo_list ol li .adminismo_list_r dfn {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.3rem;
+  color: #ea7c67;
+}
+
+.adminismo_list ol li .adminismo_list_r i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.4rem;
+  color: #666;
+  margin-left: 0.2rem;
+}
+
+/* 司机端 */
+/* 首页 */
+.adminis_ti .adminis_til1 {
+  float: left;
+  padding-right: 0.2rem;
+}
+
+.adminis_ti .adminis_til1 i {
+  font-size: 0.35rem;
+  color: #333;
+}
+
+/* 配送 */
+.adminisdl_sel .adminisdl_sel_b {
+  width: 85%;
+  border: 1px solid #6cca28;
+  border-radius: 0.1rem 0 0 0.1rem;
+  float: left;
+  height: 0.6rem;
+  position: relative;
+}
+
+.adminisdl_sel .adminislo_i {
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  top: 0;
+  margin-left: 51%;
+  margin-top: 0.02rem;
+}
+
+.adminisdl_sel .adminislo_i i {
+  font-size: 0.5rem;
+  color: #b3b3b3;
+}
+
+.adminisdl_sel input {
+  width: 59%;
+  border: 0;
+  border-radius: 0;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin-left: 0.05rem;
+  margin-top: 0.08rem;
+  background: none;
+}
+
+.adminisdl_sel #start_date {
+  width: 39%;
+  border-left: 1px solid #6cca28;
+}
+
+.adminisdl_sel button {
+  width: 15%;
+}
+
+.adminisdl_sel1 .adminispu_seb_zdi {
+  padding-right: 0.8rem;
+}
+
+.adminisdl_sel1 cite dfn {
+  border: 0;
+  margin-top: 0.08rem;
+}
+
+.adminisdl_sel1 .adminispu_seb_zd1 {
+  position: absolute;
+  left: 41%;
+  top: 0;
+  z-index: 9;
+}
+
+.adminisdl_list ol li .adminisdl_list_ba {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminisdl_list ol li:last-child .adminis_gd1 {
+  display: none;
+}
+
+.adminisdl_list ol li .adminisdl_list_t {
+  height: 0.97rem;
+  line-height: 0.97rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.adminisdl_list ol li .adminisdl_list_t cite {
+  color: #4c4c4c;
+  font-size: 0.3rem;
+}
+
+.adminisdl_list ol li .adminisdl_list_t dfn {
+  display: block;
+  float: right;
+}
+
+.adminisdl_list ol li .adminisdl_list_t dfn {
+  font-size: 0.22rem;
+  display: block;
+  float: right;
+  text-align: center;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin-top: 0.3rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-radius: 1000rem;
+}
+
+.adminisdl_list ol li .adminisdl_list_t dfn.adminisdl_list_ds1 {
+  background: #d9f6da;
+  color: #75cb37;
+}
+
+.adminisdl_list ol li .adminisdl_list_t dfn.adminisdl_list_ds2 {
+  background: #fee2e7;
+  color: #e8748b;
+}
+
+.adminisdl_list ol li .adminisdl_list_t dfn.adminisdl_list_ds3 {
+  background: #d7fff6;
+  color: #2bcca9;
+}
+
+.adminisdl_list ol li .adminisdl_list_t dfn.adminisdl_list_ds4 {
+  background: #d4f4ff;
+  color: #02b1e4;
+}
+
+.adminisdl_list ol li .adminisdl_list_t dfn.adminisdl_list_ds5 {
+  background: #ffe3d6;
+  color: #df5d21;
+}
+
+.adminisdl_list ol li .adminisdl_list_s {
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  position: relative;
+}
+
+.adminisdl_list ol li .adminisdl_list_s a {
+  display: block;
+}
+
+.adminisdl_list ol li .adminisdl_list_s address {
+  font-size: 0.26rem;
+  color: #666;
+  margin-top: 0.08rem;
+}
+
+.adminisdl_list ol li .adminisdl_list_s .adminisdl_list_sa {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 50%;
+  margin-top: 0.62rem;
+  margin-left: 0.2rem;
+}
+
+.adminisdl_list ol li .adminisdl_list_s .adminisdl_list_sa i {
+  font-size: 0.45rem;
+  color: #00e560;
+}
+
+.adminisdl_list ol li .adminisdl_list_s address:nth-child(1) {
+  height: 0.32rem;
+  line-height: 0.32rem;
+  overflow: hidden;
+}
+
+.adminisdl_list ol li .adminisdl_list_s address:nth-child(4) {
+  margin-top: 0.1rem;
+}
+
+/* 配送详情 */
+.adminisdt_tir {
+  line-height: 0.88rem;
+  font-size: 0.26rem;
+  color: #808080;
+  position: absolute;
+  right: 0.2rem;
+  z-index: 99;
+}
+
+.adminisdt_tir dfn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 100rem;
+  background: #5ed336;
+  margin-right: 0.1rem;
+}
+
+.adminisdt_tir aside {
+  display: inline-block;
+  vertical-align: middle;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  color: #fff;
+  font-size: 0.26rem;
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
+  background: #5ed336;
+  border-radius: 0.05rem;
+}
+
+.adminisdt_dh {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  background: #fff;
+}
+
+.adminisdt_dh h3 {
+  height: 0.97rem;
+  line-height: 0.97rem;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.3rem;
+  color: #4c4c4c;
+}
+
+.adminisdt_dh .adminisdt_dhd {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 0.3rem;
+  padding-top: 0.2rem;
+}
+
+.adminisdt_dh .adminisdt_dhd address {
+  clear: both;
+  padding-top: 0.07rem;
+}
+
+.adminisdt_dh .adminisdt_dhd address dfn {
+  display: block;
+  float: left;
+  width: 1.4rem;
+  text-align: justify;
+  text-align-last: justify;
+  font-size: 0.26rem;
+  color: #666;
+}
+
+.adminisdt_dh .adminisdt_dhd address aside {
+  display: block;
+  float: left;
+  font-size: 0.26rem;
+  color: #999;
+  margin-left: 0.1rem;
+}
+
+.adminisdt_dh .adminisdt_dhd address aside.on {
+  color: #f55637;
+  font-weight: 600;
+}
+
+.adminisdt_dh .adminisdt_dhd address.adminisdt_dhd_w {
+  padding-top: 0.05rem;
+}
+
+.adminisdt_dh .adminisdt_dhd address.adminisdt_dhd_w aside {
+  width: 74%;
+  line-height: 0.34rem;
+}
+
+.adminisdt_dh .adminisdt_dhd address a i {
+  display: block;
+  float: left;
+  font-size: 0.45rem;
+  color: #00e560;
+  margin-left: 0.2rem;
+  position: relative;
+  top: -0.05rem;
+}
+
+.adminisdt_dh .adminisdt_dhb {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.adminisdt_dh .adminisdt_dhb aside {
+  display: block;
+  float: left;
+  font-size: 0.26rem;
+  color: #999;
+  width: 1.3rem;
+  text-align: right;
+}
+
+.adminisdt_dh .adminisdt_dhb address {
+  display: block;
+  float: left;
+  font-size: 0.26rem;
+  color: #808080;
+  width: 76%;
+  line-height: 0.34rem;
+}
+
+/* 配送线路 */
+.adminisdi_w {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-bottom: 1px solid #f7f7f7;
+  height: 0.97rem;
+  line-height: 0.97rem;
+  color: #4c4c4c;
+  font-size: 0.28rem;
+  text-align: center;
+}
+
+.adminisdi_list {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.adminisdi_list ol li {
+  height: 1.13rem;
+  line-height: 1.13rem;
+  font-size: 0.3rem;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.adminisdi_list ol li:last-child {
+  border: 0;
+}
+
+.adminisdi_list ol li dfn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.82rem;
+  height: 0.82rem;
+  line-height: 0.82rem;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #68d15b;
+  background: url("../img/adminis_pic7.png") no-repeat;
+  background-size: cover;
+}
+
+.adminisdi_list ol li cite {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.3rem;
+  color: #666;
+  margin-left: 0.2rem;
+  width: 70%;
+  height: 1.13rem;
+  overflow: hidden;
+}
+
+.adminisdi_list ol li i {
+  display: block;
+  float: right;
+  margin-top: 0.4rem;
+  font-size: 0.4rem;
+  color: #999;
+}
+
+/* 我的 */
+.adminissu_cp {
+  height: 1.7rem;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  padding-top: 0.32rem;
+}
+
+.adminissu_cp .adminissu_cpw {
+  width: 3.32rem;
+  height: 1.06rem;
+  line-height: 1.06rem;
+  margin: auto;
+  background: url('../img/adminis_pic6.png') no-repeat;
+  background-size: cover;
+  font-size: 0.52rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* 车辆位置 */
+.maingp_map_lb {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.maingp_map_lb img {
+  max-height: none;
+  max-width: none;
+}
+
+.maingp_map_lb #allmap {
+  width: 100%;
+  height: 100%;
+}
+
+.maingp_map_lb .maingp_map_bu {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  height: 15%;
+}
+
+.maingp_map_lb .maingp_map_bub {
+  position: relative;
+  height: 100%;
+}
+
+.maingp_map_lb .maingp_map_bu .adminis_button {
+  height: 1.02rem;
+  line-height: 0.55rem;
+  position: absolute;
+  bottom: 0.2rem;
+}
+
+.maingp_map_lb .maingp_map_bu .adminis_button aside {
+  color: #b1f088;
+  font-size: 0.22rem;
+  line-height: normal;
+}
+
+/* 业务端 */
+/* 我要收款 */
+.adminisbu_list .adminisbu_list_z {
+  height: 0.97rem;
+  line-height: 0.97rem;
+  font-size: 0.3rem;
+  color: #4c4c4c;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.adminisbu_list .adminisbu_list_z dfn {
+  color: #f55637;
+}
+
+.adminisbu_list .adminisbu_list_z dfn em {
+  font-size: 0.24rem;
+}
+
+.adminisbu_list ol li .adminisbu_list_ba {
+  height: 1.1rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminisbu_list ol li:last-child .adminis_gd1 {
+  display: none;
+}
+
+.adminisbu_list ol li .adminisbu_list_l {
+  float: left;
+  margin-right: 0.2rem;
+  margin-top: 0.18rem;
+}
+
+.adminisbu_list ol li .adminisbu_list_l i {
+  font-size: 0.8rem;
+  color: #00e560;
+}
+
+.adminisbu_list ol li .adminisbu_list_o {
+  float: left;
+  margin-top: 0.2rem;
+  width: 55%;
+}
+
+.adminisbu_list ol li .adminisbu_list_o address {
+  clear: both;
+}
+
+.adminisbu_list ol li .adminisbu_list_o address aside {
+  color: #666;
+  font-size: 0.26rem;
+  margin-left: 0.3rem;
+  width: 50%;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  overflow: hidden;
+  display: block;
+  float: left;
+  margin-top: 0.05rem;
+}
+
+.adminisbu_list ol li .adminisbu_list_o address aside:first-child {
+  margin-left: 0;
+}
+
+.adminisbu_list ol li .adminisbu_list_o address .adminisbu_list_ow {
+  width: 40%;
+}
+
+.adminisbu_list ol li .adminisbu_list_r {
+  float: right;
+  line-height: 1.1rem;
+}
+
+.adminisbu_list ol li .adminisbu_list_r a {
+  display: block;
+}
+
+.adminisbu_list ol li .adminisbu_list_r dfn {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.3rem;
+  color: #ea7c67;
+}
+
+.adminisbu_list ol li .adminisbu_list_r i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.4rem;
+  color: #666;
+  margin-left: 0.2rem;
+}
+
+/* 月账单 */
+.adminisyz_list ol li .adminisbu_list_o {
+  width: 75%;
+}
+
+.adminisyz_list ol li .adminisbu_list_o address aside {
+  width: 40%;
+}
+
+.adminisyz_list ol li .adminisbu_list_o address .adminisbu_list_ow {
+  width: 52%;
+}
+
+/* 用户列表 */
+.adminisac_tir {
+  float: right;
+}
+
+.adminisac_tir i {
+  font-size: 0.55rem;
+  color: #6e6e6e;
+  position: relative;
+  top: 0.08rem;
+}
+
+.adminisat_list ol li .adminisat_list_ba {
+  height: 1.08rem;
+  position: relative;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminisat_list ol li:last-child .adminis_gd1 {
+  display: none;
+}
+
+.adminisat_list ol li a {
+  display: block;
+}
+
+.adminisat_list ol li .adminisat_list_l {
+  float: left;
+  margin-right: 0.2rem;
+  margin-top: 0.16rem;
+}
+
+.adminisat_list ol li .adminisat_list_l i {
+  font-size: 0.8rem;
+  color: #00e560;
+}
+
+.adminisat_list ol li .adminisat_list_o {
+  float: left;
+  margin-top: 0.18rem;
+  width: 85%;
+}
+
+.adminisat_list ol li .adminisat_list_o address {
+  clear: both;
+}
+
+.adminisat_list ol li .adminisat_list_o address aside {
+  color: #666;
+  font-size: 0.26rem;
+  margin-left: 0.3rem;
+  width: 40%;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  overflow: hidden;
+  display: block;
+  float: left;
+  margin-top: 0.05rem;
+}
+
+.adminisat_list ol li .adminisat_list_o address aside.adminisat_list_se {
+  color: #00e560;
+}
+
+.adminisat_list ol li .adminisat_list_o address aside:first-child {
+  margin-left: 0;
+}
+
+.adminisat_list ol li .adminisat_list_o address .adminisat_list_ow {
+  width: 52%;
+}
+
+.adminisat_list ol li .adminisat_list_r {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  margin-right: 0.2rem;
+  font-size: 0.26rem;
+  color: #999;
+  margin-top: 0.16rem;
+}
+
+.adminisat_list .mint-cell-title {
+  display: none;
+}
+
+.adminisat_list .mint-cell {
+  background: none;
+  box-sizing: inherit;
+  min-height: inherit;
+  margin-top: 0;
+  height: 1.08rem;
+}
+
+.adminisat_list .mint-cell-value {
+  display: inherit;
+}
+
+.adminisat_list .mint-cell-wrapper {
+  background: none;
+  display: inherit;
+  padding: 0;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminisat_list .mint-cell-swipe-button {
+  height: 1.08rem;
+  line-height: 1.08rem;
+  padding: 0;
+  text-align: center;
+  background: #f45a4a;
+  color: #fff;
+  font-size: 0.3rem;
+}
+
+/* 添加用户 */
+.adminisad_list {
+  margin-bottom: 0.4rem;
+}
+
+.adminisad_list ol li {
+  padding: .1rem .2rem;
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.adminisad_list ol li .list_title {
+  font-size: 0.25rem;
+  color: #666666;
+  margin-bottom: .2rem;
+}
+
+.adminisad_list ol li .adminisad_list_in {
+  vertical-align: top;
+  font-size: 0.28rem;
+  color: #333;
+  width: 100%;
+  padding-right: 0.2rem;
+  background: none;
+}
+
+.adminisad_list ol li.adminisad_list_li textarea {
+  font-size: 0.3rem;
+  color: #808080;
+  background: none;
+  width: 100%;
+  height: .7rem;
+}
+
+.switch_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .2rem;
+}
+
+.switch_box div {
+  margin: 0 !important;
+}
+
+.pick {
+  background: #6CCA28;
+  color: #ffffff !important;
+}
+
+.select_left {
+  border-left: 1px solid #6CCA28;
+  border-radius: .08rem 0 0 .08rem;
+}
+
+.select_item {
+  font-size: .2rem !important;
+  padding: .08rem .2rem;
+  border-top: 1px solid #6CCA28;
+  border-bottom: 1px solid #6CCA28;
+
+  text-align: center;
+}
+
+.select_right {
+  border-right: 1px solid #6CCA28;
+  border-radius: 0 .08rem .08rem 0;
+}
+
+.select_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.adminisad_list ol li .adminisad_list_i {
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  top: 0;
+  margin-right: 0.2rem;
+  margin-top: 0.25rem;
+  font-size: 0.5rem;
+  color: #b3b3b3;
+}
+
+.adminisad_list ol li cite {
+  display: inline-block;
+  font-size: 0.3rem;
+  color: #666;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  vertical-align: top;
+  margin-top: 0.04rem;
+  text-align: right;
+  width: 30%;
+}
+
+.adminisad_list ol li .mint-switch {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+.adminisad_list ol li .adminisad_list_z {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.06rem;
+  width: 68%;
+  position: relative;
+}
+
+.adminisad_list ol li .adminisad_list_z input {
+  width: 46%;
+}
+
+.adminisad_list ol li .adminisad_list_z input:first-child {
+  margin-right: 0.2rem;
+}
+
+.adminisad_list ol li .adminisad_list_z i {
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  top: 0;
+  margin-left: 40%;
+  margin-top: 0.25rem;
+  font-size: 0.5rem;
+  color: #b3b3b3;
+}
+
+.adminisad_list ol li.adminisad_list_li {
+  height: auto;
+  line-height: normal;
+}
+
+.adminisad_list ol li.adminisad_list_li cite {
+  line-height: normal;
+  padding-top: 0.2rem;
+}
+
+.adminisad_list .adminis_button {
+  margin-top: 0.5rem;
+}
+
+.adminisad_list *::-webkit-input-placeholder {
+  color: #a3a3a3;
+  font-size: 0.3rem;
+}
+
+.adminisad_list *:-moz-placeholder {
+  color: #a3a3a3;
+  font-size: 0.3rem;
+}
+
+.adminisad_list *:-ms-input-placeholder {
+  color: #a3a3a3;
+  font-size: 0.3rem;
+}
+
+.adminisad_list *::-webkit-textarea-placeholder {
+  color: #a3a3a3;
+  font-size: 0.3rem;
+}
+
+.adminisad_list *:-moz-placeholder {
+  color: #a3a3a3;
+  font-size: 0.3rem;
+}
+
+.adminisad_list *:-ms-textarea-placeholder {
+  color: #a3a3a3;
+  font-size: 0.3rem;
+}
+
+/* 选择地区 */
+.multi-picker-locked {
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+.multi-picker-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(75, 75, 75, 0);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  z-index: -1;
+}
+
+.multi-picker-bg-up {
+  z-index: 999 !important;
+  background: rgba(75, 75, 75, 0.65) !important;
+}
+
+.multi-picker-container {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  transform: translate3d(0, 250px, 0);
+  -webkit-transform: translate3d(0, 250px, 0);
+  left: 0;
+  background-color: #FFF;
+  transition: transform .3s ease;
+  -webkit-transition: -webkit-transform .3s ease;
+  z-index: -1;
+}
+
+.multi-picker-container-up {
+  transform: translate3d(0, 0, 0) !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+}
+
+.multi-picker-btn-box {
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: rgba(218, 218, 218, .7);
+  z-index: 10;
+}
+
+.multi-picker-btn-box .multi-picker-btn {
+  position: absolute;
+  display: inline-block;
+  margin: 0 20px;
+  color: #333;
+  right: 0;
+}
+
+.multi-picker-btn-box .multi-picker-btn:nth-child(1) {
+  left: 0;
+  right: initial;
+}
+
+.multi-picker-content {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  font-size: 0;
+  top: 50px;
+  z-index: 10;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transition: transform .3s ease;
+  -webkit-transition: -webkit-transform .3s ease;
+}
+
+.multi-picker-content .multi-picker {
+  display: inline-block;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  transition: width .3s ease;
+  vertical-align: top;
+}
+
+.multi-picker-content ul::-webkit-scrollbar {
+  display: none;
+}
+
+.multi-picker-content li {
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  list-style: none;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.multi-picker-content .multi-picker-up-shadow,
+.multi-picker-content .multi-picker-down-shadow {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+}
+
+.multi-picker-content .multi-picker-up-shadow {
+  top: 0;
+  background-image: linear-gradient(to bottom, #FFF, rgba(255, 255, 255, 0));
+  z-index: 50;
+}
+
+.multi-picker-content .multi-picker-down-shadow {
+  bottom: -200px;
+  z-index: 50;
+  background-image: linear-gradient(to top, #FFF, rgba(255, 255, 255, 0));
+}
+
+.multi-picker-content .multi-picker-line {
+  width: 95%;
+  height: 40px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  pointer-events: none;
+  box-sizing: border-box;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+}
+
+.block {
+  background: rgb(241, 241, 241);
+  border-left: 8px solid #D6DBDF;
+  padding: 10px 12px;
+  margin: 0 0 15px 0;
+  overflow: auto;
+}
+
+/* 分享绑定二维码 */
+#cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 991;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.7;
+  display: none;
+}
+
+#cover1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 991;
+  display: none;
+}
+
+.adminispr_code {
+  padding-top: 25%;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  text-align: center;
+}
+
+.adminispr_code img {
+  display: block;
+  margin: auto;
+  width: 3rem;
+  height: 3rem;
+}
+
+.adminispr_code address {
+  font-size: 0.3rem;
+  color: #333;
+  margin-top: 0.3rem;
+}
+
+/* 管理端 */
+/* 首页 */
+.adminisui_ds {
+  height: 1.08rem;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.adminisui_ds ol li {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.adminisui_ds ol li .adminisui_dsb {
+  height: 0.75rem;
+  margin-top: 0.16rem;
+  border-right: 1px solid #e9e9e9;
+}
+
+.adminisui_ds ol li:last-child .adminisui_dsb {
+  border: 0;
+}
+
+.adminisui_ds ol li cite {
+  font-size: 0.28rem;
+  color: #999;
+}
+
+.adminisui_ds ol li aside {
+  font-size: 0.3rem;
+  color: #333;
+  margin-top: 0.05rem;
+}
+
+.adminisui_ds ol li .adminisui_dss {
+  color: #ea7c67;
+}
+
+.adminisui_bt {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  position: absolute;
+  top: 2rem;
+  z-index: 9;
+  height: 38%;
+  max-width: 8.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.adminisui_bt .adminisui_bti {
+  position: absolute;
+  right: 0.2rem;
+  top: 0;
+  z-index: 9;
+  width: 1.3rem;
+  height: 0.46rem;
+  line-height: 0.46rem;
+  text-align: center;
+  background: #5ed336;
+  border-radius: 0.05rem;
+  padding-left: 0.12rem;
+  padding-right: 0.1rem;
+}
+
+.adminisui_bt .adminisui_bti #trigger1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.adminisui_bt .adminisui_bti cite {
+  display: block;
+  float: left;
+  font-size: 0.24rem;
+  color: #fff;
+}
+
+.adminisui_bt .adminisui_bti i {
+  display: block;
+  float: right;
+  font-size: 0.42rem;
+  margin-top: 0.04rem;
+  color: #fff;
+}
+
+.adminisui_bt #adminisui_bt {
+  width: 100%;
+  height: 100%;
+}
+
+.adminisui_bt #adminisui_bt img {
+  max-width: none;
+  max-height: none;
+}
+
+.adminisui_zt {
+  position: absolute;
+  top: 60%;
+  height: 28%;
+  z-index: 9;
+  max-width: 8.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.adminisui_zt .adminisui_ztt {
+  height: 20%;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminisui_zt .adminisui_ztt cite {
+  display: block;
+  float: left;
+  height: 100%;
+  font-size: 0.26rem;
+  color: #333;
+}
+
+.adminisui_zt .adminisui_ztt address {
+  display: block;
+  float: right;
+  height: 100%;
+  font-size: 0.22rem;
+  color: #666;
+}
+
+.adminisui_zt .adminisui_ztt address aside {
+  display: block;
+  float: left;
+}
+
+.adminisui_zt .adminisui_ztt address aside:first-child {
+  margin-right: 0.2rem;
+}
+
+.adminisui_zt .adminisui_ztt address aside:first-child ruby {
+  color: #ec9e17;
+}
+
+.adminisui_zt .adminisui_ztt address aside ruby {
+  color: #5ed336;
+}
+
+.adminisui_zt #adminisui_zt {
+  width: 100%;
+  height: 80%;
+}
+
+.adminisui_zt #adminisui_zt img {
+  max-width: none;
+  max-height: none;
+}
+
+/* 操作记录 */
+.adminisre_list ol li {
+  font-size: 0.26rem;
+  color: #666;
+  position: relative;
+}
+
+.adminisre_list ol li .adminisre_list_b {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+}
+
+.adminisre_list ol li address {
+  padding-top: 0.1rem;
+}
+
+.adminisre_list ol li dfn {
+  color: #999;
+}
+
+.adminisre_list ol li .adminisre_list_s {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+  font-size: 0.26rem;
+  color: #999;
+}
+
+.adminisre_list ol li:last-child .adminisre_list_h {
+  display: none;
+}
+
+.adminisre_list ol li .adminisre_list_h {
+  height: 0.1rem;
+  background: #f0f0f0;
+}
+
+/* 用户 */
+.adminisft_tb {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  position: absolute;
+  top: 1.6rem;
+  z-index: 9;
+  height: 60%;
+  max-width: 8.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.adminisft_tb #adminisft_tb {
+  width: 100%;
+  height: 100%;
+}
+
+.adminisft_tb #adminisft_tb img {
+  max-width: none;
+  max-height: none;
+}
+
+.adminisft_yh {
+  position: absolute;
+  top: 80%;
+  z-index: 9;
+  max-width: 8.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.adminisft_yh ol li {
+  width: 25%;
+  float: left;
+}
+
+.adminisft_yh ol li cite {
+  font-size: 0.26rem;
+  color: #999;
+}
+
+.adminisft_yh ol li aside {
+  font-size: 0.28rem;
+  color: #333;
+  margin-top: 0.05rem;
+}
+
+/* 用户明细 */
+.adminispd_list ol li .adminispd_list_b {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.adminispd_list ol li .adminispd_list_ti {
+  height: 0.6rem;
+  line-height: 0.48rem;
+  border-bottom: 1px solid #f0f0f0;
+  overflow: hidden;
+}
+
+.adminispd_list ol li .adminispd_list_ti i {
+  font-size: 0.4rem;
+  color: #52d978;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.adminispd_list ol li .adminispd_list_ti cite {
+  font-size: 0.3rem;
+  color: #333;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.05rem;
+}
+
+.adminispd_list ol li .adminispd_list_ti ruby {
+  color: #666;
+}
+
+.adminispd_list ol li .adminispd_list_ad {
+  margin-left: 8%;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.adminispd_list ol li .adminispd_list_ad address {
+  font-size: 0.26rem;
+  color: #666;
+}
+
+.adminispd_list ol li .adminispd_list_ad address aside {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 47%;
+}
+
+.adminispd_list ol li .adminispd_list_ad address aside:first-child {
+  padding-right: 0.05rem;
+}
+
+.adminispd_list ol li .adminispd_list_ad address aside dfn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.2rem;
+  text-align: right;
+}
+
+.adminispd_list ol li .adminispd_list_ad address aside ruby {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.adminispd_list ol li .adminispd_list_ad address .adminispd_list_ads {
+  color: #ea7c67;
+}
+
+.adminispd_list ol li .adminispd_list_ad address .adminispd_list_ads1 {
+  color: #999;
+}
+
+.adminispd_list ol li .adminispd_list_b {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+}
+
+.adminispd_list ol li .adminispd_list_h {
+  height: 0.1rem;
+  background: #f0f0f0;
+}
+
+.adminispd_list ol li:last-child .adminispd_list_h {
+  display: none;
+}
+
+/* 毛利 */
+.adminisft_tir {
+  float: right;
+}
+
+.adminisft_tir a {
+  display: inline-block;
+  vertical-align: middle;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  color: #fff;
+  font-size: 0.26rem;
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
+  background: #5ed336;
+  border-radius: 0.05rem;
+}
+
+.adminisft_se {
+  height: 0.65rem;
+  line-height: 0.65rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.adminisft_se address {
+  width: 33.33%;
+  text-align: center;
+  float: left;
+  font-size: 0.28rem;
+  color: #999;
+}
+
+.adminisft_se address:first-child {
+  text-align: left;
+  padding-left: 0.2rem;
+}
+
+.adminisft_se address:last-child {
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+.adminisft_se address aside {
+  height: 0.64rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+
+.adminisft_se address.on aside {
+  border-bottom: 1px solid #5ed336;
+}
+
+.adminisft_tj .adminisft_tjb {
+  width: 4.9rem;
+  height: 5.8rem;
+  margin: auto;
+  background: url('../img/adminis_pic10.png') center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 0.6rem;
+  margin-top: 10%;
+}
+
+.adminisft_tj .adminisft_tjb address {
+  height: 0.82rem;
+  line-height: 0.82rem;
+  font-size: 0.4rem;
+  color: #fff;
+  margin-bottom: 0.18rem;
+}
+
+.adminisft_tj .adminisft_tjb address:nth-child(3) {
+  margin-bottom: 0.1rem;
+}
+
+.adminisft_tj .adminisft_tjb address:last-child {
+  line-height: normal;
+}
+
+.adminisft_tj .adminisft_tjw {
+  margin-top: 5%;
+}
+
+.adminisft_tj .adminisft_tjw address {
+  width: 50%;
+  float: left;
+  font-size: 0.24rem;
+  color: #666;
+  padding-left: 20%;
+  padding-top: 5%;
+}
+
+.adminisft_tj .adminisft_tjw address:nth-child(2n) {
+  padding-left: 8%;
+}
+
+.adminisft_tj .adminisft_tjw address:nth-child(2) dfn {
+  background: #f75555;
+}
+
+.adminisft_tj .adminisft_tjw address:nth-child(3) dfn {
+  background: #f7a83e;
+}
+
+.adminisft_tj .adminisft_tjw address:nth-child(4) dfn {
+  background: #e6e6e6;
+}
+
+.adminisft_tj .adminisft_tjw address dfn {
+  width: 0.14rem;
+  height: 0.14rem;
+  border-radius: 1000rem;
+  background: #20ce9c;
+  display: inline-block;
+  margin-right: 0.1rem;
+}
+
+/* 毛利明细 */
+.adminisua_px {
+  text-align: center;
+  height: 0.7rem;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 0.1rem;
+}
+
+.adminisua_px address {
+  width: 33.33%;
+  float: left;
+  display: block;
+}
+
+.adminisua_px cite {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.28rem;
+  color: #666;
+  line-height: 0.7rem;
+}
+
+.adminisua_px aside {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.24rem;
+  margin-left: 0.05rem;
+}
+
+.adminisua_px aside i {
+  display: block;
+  height: 0.13rem;
+  line-height: 0.13rem;
+  font-size: 0.26rem;
+  color: #ccc;
+}
+
+.adminisua_px aside i.on {
+  color: #999;
+}
+
+/* 采购 */
+.adminisup_zj {
+  margin-top: 0.3rem;
+  text-align: center;
+  font-size: 0.36rem;
+  color: #ea7c67;
+}
+
+.adminisup_zj ruby {
+  font-size: 0.28rem;
+}
+
+.adminisup_tb {
+  height: 62%;
+  margin-top: 15%;
+}
+
+.adminispu_list_tab_on {
+  color: #6cca28 !important;
+  border-bottom: 0.03rem solid #6cca28;
+}
+
+.adminispu_list_tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0 0.2rem;
+}
+
+.adminispu_list_tab div {
+  padding: 0.2rem 0.2rem 0.05rem 0.2rem;
+  color: #333;
+}
